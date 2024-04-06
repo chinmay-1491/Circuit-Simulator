@@ -1,5 +1,5 @@
 # Running the code:
-
+Run the <mark> evalSpice.py </mark> file which returns a dictionary containing the node voltages by giving it a .ckt file as input. The <mark> teest_evalSpice.py </mark> runs the source file on the test circuits in the <mark> testdata </mark> folder.   
 
 # Working of the Code:
 
