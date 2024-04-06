@@ -1,3 +1,8 @@
+# Running the code:
+
+
+# Working of the Code:
+
 ## Parsing the file  
 The input file has been split into a list of lines using newline as a delimiter.
 The actual circuit data(starting from .circuit upto .end) has been returned. 
