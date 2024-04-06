@@ -2,18 +2,14 @@
 Run the evalSpice.py file which returns a dictionary containing the node voltages by giving it a .ckt file as input. The <mark> teest_evalSpice.py </mark> runs the source file on the test circuits in the <mark> testdata </mark> folder. The testdata folder is also expected to contain .exp files with the correct node voltages.
 
 # Format of the .ckt and .exp files:
-Consider the following .ckt file:
-'''
-.circuit
-V1   1 GND  dc 2
-R1   1   2     1
-R2   2 GND     1
-.end
-'''
-This represents a 2V dc source V1 connected between nodes 1 and GND, and resistors R1 and R2 (each of 1 ohm) connected between nodes 1 and 2, and 2 and GND respectively. It will have the corresponding .exp file as:
-'''
-({'1': 2.0, '2': 1.0, 'GND': 0.0}, {'V1': -1.0})
-'''
+Consider the following .ckt file:  
+.circuit  
+V1   1 GND  dc 2  
+R1   1   2     1  
+R2   2 GND     1  
+.end  
+This represents a 2V dc source V1 connected between nodes 1 and GND, and resistors R1 and R2 (each of 1 ohm) connected between nodes 1 and 2, and 2 and GND respectively. It will have the corresponding .exp file as:  
+({'1': 2.0, '2': 1.0, 'GND': 0.0}, {'V1': -1.0})  
 which is a tuple of dictionaries, where the first dictionary gives the voltage at each node, and the second dictionary gives the current through each voltage source.
 Note that current sources can also be included in the .ckt files.
 # Working of the Code:
